@@ -103,8 +103,13 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2">
 						<div class="col-md-12 text-center heading-section">
-							<h2>Si Sposano</h2>
-							<p>il primo ottobre 2023 &mdash; Gambassi Terme, Empoli</p>
+							<img src="images/flowers.png" style="max-width: 80px; left:auto; position: relative;" alt="">
+							<h2>Ci sposiamo</h2>
+							<p>Siamo lieti di invitarvi al nostro matrimonio<br>
+							Il giorno 01.10.2023 dalle ore 13:00<br>
+							Presso la Tenuta Quadrifoglio<br>
+							A Gambassi Terme, Firenze<br>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -133,7 +138,7 @@
 						<p>Per favore rispondi al questionario per darci i dettagli necessari per organizzare la migliore festa possibile!</p>
 
 
-						    <iframe
+		<iframe
       id="JotFormIFrame-231967177075062"
       title="RSVP"
       onload="window.parent.scrollTo(0,0)"
@@ -173,7 +178,7 @@
         case "setHeight":
           iframe.style.height = args[1] + "px";
           if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-            iframe.style.minHeight = args[1] + "px";
+            iframe.style.minHeight = "" + (parseInt(args[1]) + 50) + "px";
           }
           break;
         case "collapseErrorPage":
